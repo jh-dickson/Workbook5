@@ -32,11 +32,7 @@ int main()
         }
         else
         {
-            printf("Couldn't work it out! This is the best soln:\n");
-            printf("20pc Boxes: %d\n", box20);
-            printf("9pc Boxes: %d\n", box9);
-            printf("6pc Boxes: %d\n", box6);
-            printf("4pc Boxes: %d\n", box4);
+            printf("Not a nugget number!\n");
             exit(0);
         }
     }
