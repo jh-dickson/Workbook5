@@ -53,17 +53,23 @@ int get_rank(int n, int *vec) {
  
 int main(int argc, char *argv[]) {
     int i, r, tv[6];
- 
-    for (r = 0; r < 1000; ++r) {
+    char turing[6] = {'G', 'I', 'N', 'R', 'T', 'U'};
+    
+    for (r = 0; r < 600; ++r) {
         printf("%3d: ", r);
         get_permutation(r, 6, tv);
  
-        for (i = 0; i < 6; ++i) {
+        /*for (i = 0; i < 6; ++i) {
             if (0 == i) printf("[ ");
             else printf(", ");
-            printf("%d", tv[i]);
+            printf("%d [%c]", tv[i], turing[tv[i]]);
         }
-        printf(" ] = %d\n", get_rank(6, tv));
+        printf(" ] = %d\n", get_rank(6, tv));*/
+        for (i = 5; i >= 0; i--)
+        {
+            printf("%c", turing[tv[i]]);
+        }
+        printf(" = %d\n", get_rank(6, tv));
     }
 }
  

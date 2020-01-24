@@ -11,11 +11,11 @@ int main()
     //calc sum of line then add to sum
     int start = 1, end = n;
     sum = 0;
-    for (int i = 0; i < n ; i++)
+    while (end <= endN)
     {
         for (int j = start; j <= end; j++)
         {
-            sum += start;
+            sum += j;
         }
         start++;
         end++;
